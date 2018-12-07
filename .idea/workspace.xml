@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3d57cc5-d129-4eb8-907b-d5b1682283d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/search/BinarySearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/search/ISearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/search/SearchMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/search/LinearSearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sort/SortMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/SortMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/search/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/search/BinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/search/SearchMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/search/SearchMain.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/search/BinarySearch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+            <state relative-caret-position="322">
+              <caret line="30" column="9" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="30" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,11 +46,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/search/LinearSearch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="82">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/search/SearchMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="90">
+              <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -94,6 +102,7 @@
         <option value="$PROJECT_DIR$/src/sort/SortMain.java" />
         <option value="$PROJECT_DIR$/src/search/ISearch.java" />
         <option value="$PROJECT_DIR$/src/search/BinarySearch.java" />
+        <option value="$PROJECT_DIR$/src/search/LinearSearch.java" />
         <option value="$PROJECT_DIR$/src/search/SearchMain.java" />
       </list>
     </option>
@@ -133,6 +142,12 @@
               <item name="SkillTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="SkillTest" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="search" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SkillTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SkillTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sort" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -144,7 +159,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544211219579" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544212120296" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -216,6 +231,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1368" height="741" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -225,12 +241,12 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24583964" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.53970826" />
+      <window_info anchor="bottom" id="Terminal" weight="0.8735818" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Messages" weight="0.32901135" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.81037277" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29821718" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2605178" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -324,10 +340,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/search/LinearSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/search/BinarySearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+        <state relative-caret-position="322">
+          <caret line="30" column="9" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="30" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -336,8 +359,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/search/SearchMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="90">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
         </state>
       </provider>
     </entry>

@@ -16,11 +16,14 @@ public class BinarySearch implements ISearch {
     @Override
     public boolean search(Integer[] dataSet, Integer keyWord) {
 
+        long startTime=System.currentTimeMillis();
+
         ISort iSort=new QuickSort(false);
 //        ISort iSort=new BubbleSort(false);
         dataSet=iSort.sort(dataSet);
+        System.out.println("Sorting Time : "+(System.currentTimeMillis()-startTime)+" ms");
 
-        printLog("******* Sorting  **********");
+        printLog("******* Searching  **********");
         System.out.println(" KeyWord :"+keyWord);
 
         if(isLogEnabled) {
@@ -57,7 +60,7 @@ public class BinarySearch implements ISearch {
             }
         }
 
-        System.out.println("Start Binary Search ");
+        System.out.println("End Binary Search ");
 
         return isDataFound;
     }
