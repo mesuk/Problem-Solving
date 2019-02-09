@@ -11,7 +11,7 @@ public class SortMain {
         boolean showData=true;
 
         long startTime=System.currentTimeMillis();
-        ISort mySort = new QuickSort(showData);
+        ISort mySort = new InsertionSort(showData);
         dataSet=mySort.sort(dataSet);
 
         System.out.println("Time Taken : "+(System.currentTimeMillis()-startTime)+" ms");
@@ -33,7 +33,7 @@ public class SortMain {
         Integer [] dataSet=new Integer[DATA_SET_LENGTH];
 
         for (Integer i = 0; i < DATA_SET_LENGTH; i++) {
-            dataSet[i]=new Random().nextInt()%1000;
+            dataSet[i]=new Random().nextInt()%100;
         }
         return dataSet;
     }
