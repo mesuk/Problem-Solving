@@ -1,5 +1,7 @@
 package sort;
 
+import sort.merge_sort.MergeSort;
+
 import java.util.Random;
 
 public class SortMain {
@@ -11,7 +13,7 @@ public class SortMain {
         boolean showData=true;
 
         long startTime=System.currentTimeMillis();
-        ISort mySort = new InsertionSort(showData);
+        ISort mySort = new MergeSort(showData);
         dataSet=mySort.sort(dataSet);
 
         System.out.println("Time Taken : "+(System.currentTimeMillis()-startTime)+" ms");
