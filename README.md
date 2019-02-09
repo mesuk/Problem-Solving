@@ -1,3 +1,3 @@
 # SkillTest
 
-Here we will add some basic algorith solution with discussion.
+Here we will add some basic algorithm solution with discussion.
