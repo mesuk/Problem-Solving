@@ -57,6 +57,7 @@ public class MergeSort implements ISort {
             j += 1;
         }
 
+
         // copy temp to original interval
         for (i = start; i <= end; i += 1) {
             totalArray[i] = temp[i - start];
