@@ -1,8 +1,7 @@
 package search;
 
-import sort.BubbleSort;
 import sort.ISort;
-import sort.QuickSort;
+import sort.quick_sort.QuickSort;
 
 public class BinarySearch implements ISearch {
 
