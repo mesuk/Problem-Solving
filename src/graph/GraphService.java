@@ -128,7 +128,7 @@ public class GraphService {
 
         System.out.println("Start Node :" + startNode);
 
-        boolean[] visitedArray = new boolean[map.size()];
+        boolean[] visitedArray = new boolean[map.size()+1];
 
         Queue<Node> queue = new LinkedList<>();
 
