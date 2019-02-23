@@ -30,33 +30,31 @@ public class GraphService {
 
     }
 
-    public Edge addEdge(int nodeName,Edge mewEdge){
+    public Edge addEdge(int nodeName,Edge newEdge){
 
-        if(mewEdge==null){
+        if(newEdge==null){
             System.out.println("Edge cannot be null");
             return null;
         }
 
-        boolean isEdgeValid=false;
-        Node effectiveNode=null;
-        for (int nodeNameTemp:map.keySet()) {
-            if(nodeNameTemp==nodeName){
-                System.out.println("Edge :"+nodeNameTemp+" is valid");
-                isEdgeValid=true;
+        Node sourceNode=isValidNode(nodeName);
 
-                effectiveNode=map.get(nodeNameTemp);
-                break;
-            }
-        }
-
-        if(!isEdgeValid){
-            System.out.println("Edge is invalid");
+        if(sourceNode==null){
+            System.out.println("Source node is invalid");
             return null;
         }
 
-        effectiveNode.addEdge(mewEdge);
+        Node destinationNode=isValidNode(newEdge.getDestination());
 
-        return mewEdge;
+        if(destinationNode==null){
+            System.out.println("Destination node is invalid");
+            return null;
+        }
+
+        sourceNode.addEdge(newEdge);
+        destinationNode.addEdge(new Edge(destinationNode.getNodeName(),sourceNode.getNodeName(),newEdge.getWeight(),null));
+
+        return newEdge;
     }
 
     public void printGraph(){
@@ -64,10 +62,29 @@ public class GraphService {
             System.out.println("Map is null");
             return;
         }
+        System.out.println();
+
+        System.out.println("Printing whole graph");
 
         for (Node node:map.values()) {
-            printGraph(node);
+            Edge currentNode=node.getHead();
+
+            System.out.print(""+node.getNodeName()+" --> ");
+
+            while (currentNode!=null){
+                System.out.print(" "+currentNode.getDestination());
+                currentNode=currentNode.getNext();
+
+                if(currentNode!=null){
+                    System.out.print(" -> ");
+                }else{
+                    System.out.println();
+                }
+
+            }
         }
+
+        System.out.println();
     }
 
     public void printGraph(Node startNode){
@@ -77,6 +94,8 @@ public class GraphService {
             return;
         }
 
+        System.out.println();
+
         System.out.println("Printing :"+startNode.getNodeName());
 
         System.out.println();
@@ -85,7 +104,7 @@ public class GraphService {
         Edge currentNode=startNode.getHead();
 
         while (currentNode!=null){
-            System.out.print(""+currentNode.getValue()+" ->");
+            System.out.print(""+currentNode.getDestination()+" ->");
             currentNode=currentNode.getNext();
         }
 
@@ -99,5 +118,26 @@ public class GraphService {
 
     public void setMap(Map<Integer, Node> map) {
         this.map = map;
+    }
+
+    private Node isValidNode(int nodeName){
+
+        boolean isEdgeValid=false;
+        Node effectiveNode=null;
+
+        for (int nodeNameTemp:map.keySet()) {
+            if(nodeNameTemp==nodeName){
+                isEdgeValid=true;
+
+                effectiveNode=map.get(nodeNameTemp);
+                break;
+            }
+        }
+
+        if(!isEdgeValid){
+            return null;
+        }
+        return effectiveNode;
+
     }
 }

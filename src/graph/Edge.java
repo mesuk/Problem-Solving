@@ -1,22 +1,32 @@
 package graph;
 
 public class Edge {
-    private int value;
+    private int source;
+    private int destination;
     private int weight;
     private Edge next;
 
-    public Edge(int value, int weight, Edge next) {
-        this.value = value;
+    public Edge(int source, int destination, int weight, Edge next) {
+        this.source = source;
+        this.destination = destination;
         this.weight = weight;
         this.next = next;
     }
 
-    public int getValue() {
-        return value;
+    public int getSource() {
+        return source;
     }
 
-    public void setValue(int value) {
-        this.value = value;
+    public void setSource(int source) {
+        this.source = source;
+    }
+
+    public int getDestination() {
+        return destination;
+    }
+
+    public void setDestination(int destination) {
+        this.destination = destination;
     }
 
     public int getWeight() {

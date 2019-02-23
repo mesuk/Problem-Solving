@@ -44,10 +44,25 @@ public class Node {
         Edge currentEdge=head;
         Edge lastEdge=head;
 
+        boolean isNodeAlreadyAdded=false;
+
         while (currentEdge!=null){
+
+            if(currentEdge.getDestination()==edge.getDestination() ){
+                isNodeAlreadyAdded=true;
+                break;
+            }
+
             lastEdge=currentEdge;
             currentEdge=currentEdge.getNext();
         }
+
+        if(isNodeAlreadyAdded){
+            System.out.println("Edge already added.");
+            return edge;
+        }
+
+        System.out.println("Edge is new. so adding .");
 
         lastEdge.setNext(edge);
         return edge;

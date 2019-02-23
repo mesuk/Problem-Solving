@@ -17,27 +17,27 @@ public class GraphMain {
 
         graphService.printGraph();
 
-        graphService.addEdge(0,new Edge(1,10,null));
-        graphService.addEdge(0,new Edge(4,10,null));
+        graphService.addEdge(0,new Edge(0,1,10,null));
+        graphService.addEdge(0,new Edge(0,4,10,null));
 
 
-        graphService.addEdge(1,new Edge(0,10,null));
-        graphService.addEdge(1,new Edge(2,10,null));
-        graphService.addEdge(1,new Edge(3,10,null));
-        graphService.addEdge(1,new Edge(4,10,null));
+        graphService.addEdge(1,new Edge(1,0,10,null));
+        graphService.addEdge(1,new Edge(1,2,10,null));
+        graphService.addEdge(1,new Edge(1,3,10,null));
+        graphService.addEdge(1,new Edge(1,4,10,null));
 
 
 
-        graphService.addEdge(2,new Edge(1,10,null));
-        graphService.addEdge(2,new Edge(3,10,null));
+        graphService.addEdge(2,new Edge(2,1,10,null));
+        graphService.addEdge(2,new Edge(2,3,10,null));
 
-        graphService.addEdge(3,new Edge(1,10,null));
-        graphService.addEdge(3,new Edge(2,10,null));
-        graphService.addEdge(3,new Edge(4,10,null));
+        graphService.addEdge(3,new Edge(3,1,10,null));
+        graphService.addEdge(3,new Edge(3,2,10,null));
+        graphService.addEdge(3,new Edge(3,4,10,null));
 
-        graphService.addEdge(4,new Edge(0,10,null));
-        graphService.addEdge(4,new Edge(1,10,null));
-        graphService.addEdge(4,new Edge(3,10,null));
+        graphService.addEdge(4,new Edge(4,0,10,null));
+        graphService.addEdge(4,new Edge(4,1,10,null));
+        graphService.addEdge(4,new Edge(4,3,10,null));
 
         graphService.printGraph();
 
