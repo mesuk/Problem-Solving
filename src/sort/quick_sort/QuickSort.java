@@ -34,7 +34,7 @@ public class QuickSort implements ISort {
     private int partition(Integer arr[], int low, int high) {
         int pivot = arr[high];
         int pIndex = low; // index of smaller element
-        for (int j = low; j < high; j++) {
+        for (int j = low; j <= high; j++) {
             // If current element is smaller than or
             // equal to pivot
             if (arr[j] <= pivot) {
