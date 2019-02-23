@@ -44,6 +44,10 @@ public class GraphMain {
 
         Map<Integer,Node> map=graphService.getMap();
 
+        String path=graphService.bfsTraversal(0);
+
+        System.out.println("Path :"+path);
+
 
     }
 }
