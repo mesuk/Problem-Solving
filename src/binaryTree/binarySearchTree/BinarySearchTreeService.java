@@ -16,7 +16,6 @@ public class BinarySearchTreeService {
     }
 
     public void addNode(Integer value) {
-        //[3,9,20,null,null,15,7]
         if (root == null) {
             root = new TreeNode(value);
             return;
@@ -30,8 +29,8 @@ public class BinarySearchTreeService {
         while (!queue.isEmpty()) {
             TreeNode currentNode = queue.poll();
 
-            if (currentNode.val > value) {
 
+            if (currentNode.val > value) {
                 if (currentNode.left == null) {
                     currentNode.left = lastNode;
                     break;
@@ -51,7 +50,6 @@ public class BinarySearchTreeService {
     }
 
     public void printBfs() {
-        //[3,9,20,null,null,15,7]
 
         List<List<Integer>> result = levelOrder(root);
         System.out.println();
@@ -68,7 +66,6 @@ public class BinarySearchTreeService {
     }
 
     public List<List<Integer>> levelOrder(TreeNode root) {
-        //LeetCode 102. Binary Tree Level Order Traversal
         List<List<Integer>> result = new ArrayList<>();
 
         if (root == null) {
