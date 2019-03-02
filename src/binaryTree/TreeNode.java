@@ -2,10 +2,10 @@ package binaryTree;
 
 public class TreeNode {
     public Integer val;
-    TreeNode left;
-    TreeNode right;
+    public TreeNode left;
+    public TreeNode right;
 
-    TreeNode(Integer x) {
+    public TreeNode(Integer x) {
         val = x;
     }
 
