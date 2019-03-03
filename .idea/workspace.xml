@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3d57cc5-d129-4eb8-907b-d5b1682283d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetCode/LeetCodeMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetCode/Problems.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetCode/LeetCodeMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetCode/LeetCodeMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetCode/LeetCodeProblems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetCode/LeetCodeProblems.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,40 +16,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/binaryTree/BinaryTreeService.java">
+        <entry file="file://$PROJECT_DIR$/src/leetCode/LeetCodeProblems.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="72" selection-start-line="72" selection-end-line="72" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="166">
+              <caret line="93" selection-start-line="93" selection-end-line="93" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/leetCode/Problems.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="33" column="31" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="33" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/leetCode/LeetCodeMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/binaryTree/BinaryTreeMain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+            <state relative-caret-position="196">
+              <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -111,8 +90,9 @@
         <option value="$PROJECT_DIR$/src/binaryTree/binarySearchTree/BinarySearchTreeService.java" />
         <option value="$PROJECT_DIR$/src/binaryTree/BinaryTreeService.java" />
         <option value="$PROJECT_DIR$/src/binaryTree/BinaryTreeMain.java" />
-        <option value="$PROJECT_DIR$/src/leetCode/LeetCodeMain.java" />
         <option value="$PROJECT_DIR$/src/leetCode/Problems.java" />
+        <option value="$PROJECT_DIR$/src/leetCode/LeetCodeProblems.java" />
+        <option value="$PROJECT_DIR$/src/leetCode/LeetCodeMain.java" />
       </list>
     </option>
   </component>
@@ -131,7 +111,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -154,10 +133,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551634101506" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551637716048" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -314,14 +294,21 @@
       <option name="project" value="LOCAL" />
       <updated>1551554848352</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="LeetCode 504. Base 7 problem solved">
+      <created>1551634133744</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1551634133745</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1368" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21558245" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21860817" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -330,12 +317,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32901135" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.115072936" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.34035656" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.15883306" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.17017828" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.048622366" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.074554294" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.36953" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.14910859" />
@@ -354,7 +341,8 @@
     <MESSAGE value="BFS traversal added on graph" />
     <MESSAGE value="Binary search tree add and level order traversal done" />
     <MESSAGE value="LeetCode 101. Symmetric binary tree" />
-    <option name="LAST_COMMIT_MESSAGE" value="LeetCode 101. Symmetric binary tree" />
+    <MESSAGE value="LeetCode 504. Base 7 problem solved" />
+    <option name="LAST_COMMIT_MESSAGE" value="LeetCode 504. Base 7 problem solved" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -426,40 +414,16 @@
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leetCode/Problems.java</url>
-          <line>21</line>
-          <properties />
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leetCode/Problems.java</url>
-          <line>31</line>
-          <properties />
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/LeetCodeMain.java</url>
-          <line>11</line>
+          <line>48</line>
           <properties />
-          <option name="timeStamp" value="37" />
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leetCode/LeetCodeMain.java</url>
-          <line>20</line>
+          <url>file://$PROJECT_DIR$/src/leetCode/LeetCodeProblems.java</url>
+          <line>115</line>
           <properties />
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leetCode/LeetCodeMain.java</url>
-          <line>16</line>
-          <properties />
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leetCode/Problems.java</url>
-          <line>18</line>
-          <properties />
-          <option name="timeStamp" value="40" />
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -662,17 +626,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/leetCode/LeetCodeMain.java">
+    <entry file="file://$PROJECT_DIR$/src/leetCode/LeetCodeProblems.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        <state relative-caret-position="166">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/leetCode/Problems.java">
+    <entry file="file://$PROJECT_DIR$/src/leetCode/LeetCodeMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="33" column="31" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="33" selection-end-column="31" />
+        <state relative-caret-position="196">
+          <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
         </state>
       </provider>
     </entry>
