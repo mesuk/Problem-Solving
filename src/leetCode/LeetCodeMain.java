@@ -63,5 +63,33 @@ public class LeetCodeMain {
         thNumber=12;
         fibNumber=leetCodeProblems.fib(thNumber);
         System.out.println(thNumber+" Fibonacci Number  :"+fibNumber);
+
+
+        System.out.println();
+        int mainNumber=1534236469;
+        int revNumber=leetCodeProblems.reverse(mainNumber);
+        System.out.println(" Reverse Number  :"+revNumber);
+
+        System.out.println();
+        System.out.println();
+        int Number=-121;
+        boolean isPalindrome=leetCodeProblems.isPalindrome(Number);
+        System.out.println(+Number+" is palindrome Number  :"+isPalindrome);
+
+
+        System.out.println();
+        System.out.println();
+        String sentence="a  ";
+        int wordLength=leetCodeProblems.lengthOfLastWord(sentence);
+        System.out.println(" Word length  :"+wordLength);
+
+
+        System.out.println();
+        System.out.println();
+        ListNode root=leetCodeProblems.prepareLinkedList();
+        ListNode newRoot=leetCodeProblems.deleteDuplicates(root);
+        System.out.println();
+
+
     }
 }
