@@ -233,4 +233,46 @@ public class LeetCodeProblems {
         }
         return head;
     }
+
+    //1,1,2,3,3,4
+
+    public int removeDuplicates(int[] nums) {
+        int secondPosition = 1;
+        for (int index = 0; index < nums.length; index++) {
+
+            while (secondPosition<nums.length
+                    &&nums[index] == nums[secondPosition]) {
+                secondPosition = secondPosition + 1;
+            }
+
+            if (secondPosition >=nums.length) {
+                return index + 1;
+            }
+
+            nums[index + 1] = nums[secondPosition];
+            secondPosition++;
+        }
+
+        return nums.length;
+    }
+
+    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+
+        ListNode head = null;
+
+
+        return head;
+    }
+
+    int linkedListLength(ListNode root) {
+        int count = 0;
+        ListNode currentNode = root;
+
+        while (currentNode != null) {
+            count++;
+            currentNode = currentNode.next;
+        }
+        return count;
+    }
+
 }

@@ -90,6 +90,18 @@ public class LeetCodeMain {
         ListNode newRoot=leetCodeProblems.deleteDuplicates(root);
         System.out.println();
 
+        System.out.println();
+        System.out.println();
+//        int[] nums1={1,1,2,3,3,4};
+        int[] nums1={1,1,2,3,3,4,4};
+//        int[] nums1={0,0,1,1,1,2,2,3,3,4};
+//        int[] nums1={1,1,2};
+        int uniqueNumberCount=leetCodeProblems.removeDuplicates(nums1);
+        System.out.println(uniqueNumberCount);
+        for (int i = 0; i < nums1.length; i++) {
+            System.out.print(""+nums1[i]+" ");
+        }
+
 
     }
 }
