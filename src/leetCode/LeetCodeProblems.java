@@ -256,10 +256,63 @@ public class LeetCodeProblems {
         return nums.length;
     }
 
+    //21. Merge Two Sorted Lists
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 
         ListNode head = null;
 
+        if(l1==null){
+            return l2;
+        }
+
+
+        if(l2==null){
+            return l1;
+        }
+
+        ListNode l1Temp=l1;
+        ListNode l2Temp=l2;
+        ListNode newTemp=head;
+
+        while (true){
+
+            if(l1Temp==null){
+                newTemp.next=l2Temp;
+                break;
+            }
+
+            if(l2Temp==null){
+                newTemp.next=l1Temp;
+                break;
+            }
+
+            if(l1Temp.val<l2Temp.val){
+                if(head==null){
+                    head=l1Temp;
+                    newTemp=head;
+                    l1Temp=l1Temp.next;
+                    continue;
+                }
+
+                newTemp.next=l1Temp;
+                l1Temp=l1Temp.next;
+                newTemp=newTemp.next;
+
+            }else{
+                if(head==null){
+                    head=l2Temp;
+                    newTemp=head;
+                    l2Temp=l2Temp.next;
+                    continue;
+                }
+
+                newTemp.next=l2Temp;
+                l2Temp=l2Temp.next;
+                newTemp=newTemp.next;
+            }
+
+
+        }
 
         return head;
     }
@@ -274,5 +327,58 @@ public class LeetCodeProblems {
         }
         return count;
     }
+
+    //88. Merge Sorted Array
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+
+        if(n==0){
+            return;
+        }
+
+        if(m==0){
+            for (int i = 0; i <n; i++) {
+                nums1[i]=nums2[i];
+            }
+            return;
+        }
+
+
+        int bigCount=0;
+        for (int i = 0; i <n; i++) {
+
+            int tempNum=nums2[i];
+
+            for (int j = bigCount; j < m; j++) {
+                if(tempNum>=nums1[j]){
+
+                    if(j+1>=m){
+                        bigCount=j+1;
+
+                        nums1[bigCount]=tempNum;
+                        m++;
+                        break;
+                    }
+
+                    continue;
+                }
+
+                // shift all number to right
+                // insert tempNumber to j position
+
+                bigCount=j;
+                for (int k = m; k > bigCount; k--) {
+                    nums1[k]=nums1[k-1];
+                }
+                nums1[bigCount]=tempNum;
+                m++;
+                break;
+
+            }
+
+
+        }
+
+    }
+
 
 }

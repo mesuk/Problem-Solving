@@ -102,6 +102,21 @@ public class LeetCodeMain {
             System.out.print(""+nums1[i]+" ");
         }
 
+        int[] mNums1={4,5,6,0,0,0};
+        int[] mNums2={1,2,3};
+
+        leetCodeProblems.merge(mNums1,3,mNums2,3);
+
+        ListNode l1=new ListNode(1);
+        l1.next=new ListNode(2);
+        l1.next.next=new ListNode(4);
+
+        ListNode l2=new ListNode(1);
+        l2.next=new ListNode(3);
+        l2.next.next=new ListNode(4);
+
+        ListNode newNode=leetCodeProblems.mergeTwoLists(l1,l2);
+
 
     }
 }
