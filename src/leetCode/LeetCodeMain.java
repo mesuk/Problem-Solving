@@ -17,6 +17,7 @@ public class LeetCodeMain {
         number=-7;
         newBase=7;
 
+
         convertedNumber = leetCodeProblems.baseConversion(number);
         System.out.println("Old Number:"+number);
         System.out.println("New base :"+newBase);
