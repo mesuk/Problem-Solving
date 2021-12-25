@@ -11,6 +11,7 @@ public class ValidParentheses {
 
     public static boolean isValid(String s) {
 
+        // learning the data
         HashMap<Character, Character> mappings = new HashMap<>();
         mappings.put(')', '(');
         mappings.put('}', '{');
@@ -22,14 +23,17 @@ public class ValidParentheses {
             Character c = s.charAt(i);
 
             if (mappings.containsKey(c)) {
+                // closing tag found, it must be equals stack top elements
                 Character topElement = stack.empty() ? '#' : stack.pop();
                 if (topElement != mappings.get(c)) {
                     return false;
                 }
             } else {
+                // opening tag -> adding into stack
                 stack.push(c);
             }
         }
+        // if stack not empty -> then error
         return stack.isEmpty();
     }
 }
