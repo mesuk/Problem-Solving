@@ -13,7 +13,7 @@ public class LinkedListCycleTwo142 {
         ListNode tempNode = node;
         ListNode cycleNode = null;
 
-        int[] nodeValues = new int[]{1, 3, 8, 10, 5, 100, 7}; // cycle 10
+        int[] nodeValues = new int[]{1, 3, 8, 10, 5, 100, 7}; // cycle at 10
 
         for (int i = 1; i < nodeValues.length; i++) {
             tempNode.next = new ListNode(nodeValues[i]);
@@ -28,6 +28,9 @@ public class LinkedListCycleTwo142 {
     }
 
     public static ListNode detectCycle(ListNode head) {
+
+        //1. slowNode1 and fastNode will meet at point a. then it has cycle
+        //2. slowNode2 and slowNode1 will start moving and at meeting point it will be the cycle point
 
         if (head == null) {
             return null;
