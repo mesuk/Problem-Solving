@@ -17,7 +17,7 @@ public class MinStack155 {
         System.out.println("Min : " + minStack.getMin());
     }
 
-    class MinStack {
+    static class MinStack {
         private Node head;
 
         public MinStack() {
