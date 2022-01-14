@@ -34,13 +34,13 @@ public class ReverseLinkedList206 {
 
         while (head.next != null){
             prevNode = head;
-            tail =
+//            tail =
         }
 
 
         ListNode nextNode = head.next;
         ListNode currentNode = null;
-        ListNode prevNode = head;
+//        ListNode prevNode = head;
         while(nextNode != null){
             currentNode = nextNode;
             nextNode = nextNode.next;

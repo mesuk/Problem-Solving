@@ -16,6 +16,8 @@ public class TwoSumTwo167 {
         int left = 0;
         int right = numbers.length - 1;
 
+        Arrays.sort(numbers);
+
         while (left < right) {
             if (numbers[left] + numbers[right] == target) {
                 return new int[]{left + 1, right + 1};
@@ -26,6 +28,5 @@ public class TwoSumTwo167 {
             }
         }
         return null;
-
     }
 }

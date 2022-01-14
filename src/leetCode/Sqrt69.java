@@ -34,7 +34,6 @@ public class Sqrt69 {
             }
 
         }
-
         return right;
 
     }
