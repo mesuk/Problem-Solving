@@ -2,6 +2,7 @@
   <component name="FileTypeManager" version="17">
     <extensionMap>
       <removed_mapping ext="graphqls" approved="true" type="GraphQL" />
+      <mapping ext="gradle.kts" type="Kotlin" />
       <mapping ext="graphqls" type="PLAIN_TEXT" />
       <removed_mapping ext="graphqls" approved="true" type="GraphQL" />
     </extensionMap>
