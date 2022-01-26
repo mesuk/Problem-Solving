@@ -55,11 +55,11 @@ public class LinkedListCycleTwo142 {
             return null;
         }
 
-        ListNode slowNode2 = head;
+        fastNode = head;
 
-        while (slowNode1 != slowNode2) {
+        while (slowNode1 != fastNode) {
             slowNode1 = slowNode1.next;
-            slowNode2 = slowNode2.next;
+            fastNode = fastNode.next;
         }
 
         return slowNode1;

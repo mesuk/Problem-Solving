@@ -8,28 +8,18 @@ public class RemoveDuplicatesFromSortedArray80 {
 
     public static int removeDuplicates(int[] nums) {
 
-        int frequencyCount = 0;
-        int currentNumber = 0;
-        int prevNumber = 0;
-        int insertPosition = 0;
+        if (nums.length < 3) {
+            return nums.length;
+        }
 
-        for (int i = 1; i < nums.length; i++) {
-            if (frequencyCount == 0) {
-                currentNumber = nums[i];
+        int insertPosition = 2;
+        for (int i = 2; i < nums.length; i++) {
+
+            if (nums[i] != nums[insertPosition - 2]) {
+                nums[insertPosition] = nums[i];
+                insertPosition++;
             }
 
-            if (nums[i] == currentNumber) {
-                frequencyCount++;
-                prevNumber = currentNumber;
-            } else {
-                int x= Math.min(frequencyCount, 2);
-                for (int j = 0; j < x; j++) {
-                    nums[insertPosition] = prevNumber;
-                    insertPosition++;
-                }
-                frequencyCount = 0;
-                prevNumber = nums[i];
-            }
         }
 
         return insertPosition;
