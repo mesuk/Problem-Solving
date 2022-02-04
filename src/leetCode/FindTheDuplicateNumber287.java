@@ -10,9 +10,10 @@ public class FindTheDuplicateNumber287 {
 //        You must solve the problem without modifying the array nums and uses only constant extra space.
 
 //        int[] nums = {1, 3, 4, 2, 2};
-        int[] nums = {3, 1, 3, 4, 2};
+        int[] nums = {1, 3, 4, 2, 2};
 //        System.out.println(findDuplicate(nums));
-        System.out.println(findDuplicateFloyed(nums));
+//        System.out.println(findDuplicateFloyed(nums));
+        System.out.println(findDuplicateModify(nums));
     }
 
     public static int findDuplicate(int[] nums) {
@@ -25,6 +26,27 @@ public class FindTheDuplicateNumber287 {
             map.put(nums[i], 1);
         }
         return 0;
+
+    }
+
+    public static int findDuplicateModify(int[] nums) {
+
+        int cursor = 0;
+        int duplicate = -1;
+        for (int i = 0; i < nums.length; i++) {
+            cursor = Math.abs(nums[i]);
+            if (nums[cursor] < 0) {
+                duplicate = cursor;
+                break;
+            } else {
+                nums[cursor] *= -1;
+            }
+        }
+        for (int i = 0; i < nums.length; i++) {
+            nums[i] = Math.abs(nums[i]);
+        }
+
+        return duplicate;
 
     }
 

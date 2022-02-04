@@ -3,8 +3,9 @@ package leetCode;
 public class SearchRotatedArray {
     public static void main(String[] args) {
 //        int[] nums = new int[]{4, 5, 6, 7, 0, 1, 2};
-        int[] nums = new int[]{1, 3};
-        int target = 1;
+        int[] nums = new int[]{4, 4, 5, 6, 7, 1, 2, 3};
+//        int[] nums = new int[]{1, 3};
+        int target = 5;
         System.out.println(search(nums, target));
     }
 
@@ -31,7 +32,7 @@ public class SearchRotatedArray {
             // search in the right side
             return search(nums, target, ascendingStart, nums.length - 1);
         // search in the left side
-        return search(nums, target, 0, ascendingStart);
+        return search(nums, target, 0, ascendingStart - 1);
     }
 
     public static int search(int[] nums, int target, int left, int right) {
