@@ -54,6 +54,8 @@ public class FirstLastPositionSortedArray34 {
     }
 
     public static int findBound(int[] nums, int target, boolean isFirst) {
+//        int[] nums = {5, 7, 7, 8, 8, 10};
+//        int target = 8;
         int l = 0;
         int mid;
         int h = nums.length - 1;

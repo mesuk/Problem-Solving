@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class MergeTwoSortedArray88 {
     public static void main(String[] args) {
-        //https://leetcode.com/problems/merge-sorted-array/
+        //https://leetcode.com/problems/merge-sorted-array/=
         int[] nums1 = {1, 2, 3, 0, 0, 0};
         int m = 3;
         int[] nums2 = {2, 5, 6};

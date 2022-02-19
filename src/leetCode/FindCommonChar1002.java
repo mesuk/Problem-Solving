@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public class FindCommonChar1002 {
+    //https://leetcode.com/problems/find-common-characters/
     public static void main(String[] args) {
         String[] words = {"bella", "label", "roller"};
         System.out.println(commonChars(words).toString());

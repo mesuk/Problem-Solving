@@ -1,6 +1,6 @@
 package toptal;
 
-public class Solution {
+public class SplitWordLengthSolution {
     public static void main(String[] args) {
 //        String message = "Codility We test coders";
         String message = "Why not";
@@ -14,9 +14,6 @@ public class Solution {
         if (message == null || message.trim().length() == 0) {
             return null;
         }
-//        if (message.length() < K) {
-//            return null;
-//        }
 
         StringBuilder result = new StringBuilder();
         String[] words = message.trim().split(" ");

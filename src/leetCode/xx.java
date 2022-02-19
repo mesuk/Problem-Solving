@@ -1,35 +1,26 @@
 package leetCode;
 
-import java.util.HashMap;
-import java.util.Stack;
-
 public class xx {
     public static void main(String[] args) {
-        String arr = "()[]{}";
-        System.out.println(isValid(arr));
+        int[] nums = {1, 3, 5, 6};
+        int target = 5;
+        System.out.println(searchInsert(nums, target));
+
+        // 1,2,3,4,4
     }
 
-    public static boolean isValid(String s) {
-        HashMap<Character, Character> data = new HashMap<>();
-        data.put(')', '(');
-        data.put('}', '{');
-        data.put(']', '[');
+    public static int searchInsert(int[] nums, int target) {
+        int mid;
+        int l = 0, r = nums.length - 1;
 
-        Stack<Character> stack = new Stack<>();
-
-        Character topChar;
-        for (Character c : s.toCharArray()
-        ) {
-            if (data.containsKey(c)) {
-                topChar = stack.isEmpty() ? '#' : stack.pop();
-                if (!data.get(c).equals(topChar)) {
-                    return false;
-                }
+        while (l <= r) {
+            mid = l + (r - l) / 2;
+            if (nums[mid] > target) {
+                r = mid - 1;
             } else {
-                stack.push(c);
+                l = mid + 1;
             }
         }
-        return stack.isEmpty();
-
+        return l;
     }
 }

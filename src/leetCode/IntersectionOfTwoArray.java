@@ -3,6 +3,7 @@ package leetCode;
 import java.util.*;
 
 public class IntersectionOfTwoArray {
+    //https://leetcode.com/problems/intersection-of-two-arrays/
     public static void main(String[] args) {
         int[] nums1 = {1, 2, 2, 1};
         int[] nums2 = {2, 2};

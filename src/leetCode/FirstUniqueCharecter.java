@@ -3,6 +3,7 @@ package leetCode;
 import java.util.HashMap;
 
 public class FirstUniqueCharecter {
+    //https://leetcode.com/problems/first-unique-character-in-a-string/
     public static void main(String[] args) {
         String s = "loveleetcode";
         System.out.println(firstUniqChar(s));

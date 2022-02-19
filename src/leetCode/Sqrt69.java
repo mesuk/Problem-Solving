@@ -26,7 +26,7 @@ public class Sqrt69 {
                 // sqrt found
                 return mid;
             } else if (x / mid < mid) {
-                // sqrt value is left side of current mid, so increase right
+                // sqrt value is left side of current mid, so decrease right
                 right = mid - 1;
             } else {
                 // sqrt value is right side of current mid, so increase left
