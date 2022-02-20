@@ -12,12 +12,38 @@ public class BuySellStock121 {
 
     public static int maxProfit(int[] prices) {
         int maxProfit = 0;
-        int minPrice = prices[0];
+        int l = 0, r = 1;
+        int pL, pR;
+        while (r < prices.length) {
+            pL = prices[l];
+            pR = prices[r];
+            // if buy value > sell then just update left to right pointer
+            if (pL > pR) {
+                l = r;
+            } else {
+                // update maxProfit, because sell value > buy value
+                maxProfit = Math.max(maxProfit, (pR - pL));
+            }
+            // always update right pointer
+            r++;
+        }
+        return maxProfit;
+    }
 
-        for (Integer price : prices
-        ) {
-            maxProfit = Math.max(maxProfit, price - minPrice);
-            minPrice = Math.min(minPrice, price);
+    public static int maxProfitNSquire(int[] prices) {
+        int maxProfit = 0;
+        int pI, pJ;
+        // this solution also valid, passes 199 test cases.
+        // Time Limit Exceeded
+        for (int i = 0; i < prices.length - 1; i++) {
+            pI = prices[i];
+            for (int j = i + 1; j < prices.length; j++) {
+                pJ = prices[j];
+                if (pI < pJ) {
+                    maxProfit = Math.max(maxProfit, pJ - pI);
+                }
+            }
+
         }
         return maxProfit;
     }
