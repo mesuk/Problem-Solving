@@ -10,12 +10,14 @@ public class MaximumSubarray53 {
 
     public static int maxSubArray(int[] nums) {
         // Kadane's Algorithm
+        // 1. current & maxSum assign to first element
+        // 2. currentSum take all value, maxSum always take max value
         int currentSum = nums[0], maxSum = nums[0];
         for (int i = 1; i < nums.length; i++) {
+            // 3. calculate current sum, take max after calculation
             currentSum = Math.max(nums[i], currentSum + nums[i]);
-            if (currentSum > maxSum) {
-                maxSum = currentSum;
-            }
+            // 4. Assign max to max sum
+            maxSum = Math.max(maxSum, currentSum);
         }
         return maxSum;
     }
