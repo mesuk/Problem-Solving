@@ -1,6 +1,6 @@
 package leetCode;
 
-public class FindMinimumInROatedArray {
+public class FindMinimumInRoatedArray {
     //https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
     public static void main(String[] args) {
         int[] nums = {3, 4, 5, 1, 2};
@@ -20,6 +20,7 @@ public class FindMinimumInROatedArray {
 
         int l = 0, r = nums.length - 1;
         int m;
+        //{3, 4, 5, 1, 2};
         while (r >= l) {
             m = l + (r - l) / 2;
             //3. mid > mid+1 value, then mid+1 value is min
