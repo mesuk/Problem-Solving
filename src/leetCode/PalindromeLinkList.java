@@ -24,6 +24,7 @@ public class PalindromeLinkList {
     public static boolean isPalindromeWithExtraSpace(ListNode head) {
         int nodeLength = 0;
         ListNode tempNode = head;
+        // find node count
         while (tempNode != null) {
             nodeLength++;
             tempNode = tempNode.next;
@@ -31,6 +32,7 @@ public class PalindromeLinkList {
 
         tempNode = head;
 
+        // add values into array
         int[] values = new int[nodeLength];
         int i = 0;
         while (tempNode != null) {
@@ -42,6 +44,7 @@ public class PalindromeLinkList {
 
         int l = 0, r = values.length - 1;
 
+        // palindrome check
         while (l < r) {
             if (values[l] != values[r]) {
                 isPalindrome = false;

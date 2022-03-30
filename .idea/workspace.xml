@@ -1,36 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3d57cc5-d129-4eb8-907b-d5b1682283d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetCode/PalindromeLinkList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SkillTest/binaryTree/BinaryTreeMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SkillTest/binaryTree/BinaryTreeService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SkillTest/binaryTree/TreeNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SkillTest/binaryTree/binarySearchTree/BinarySearchTreeMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SkillTest/binaryTree/binarySearchTree/BinarySearchTreeService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SkillTest/graph/Edge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SkillTest/graph/GraphMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SkillTest/graph/GraphService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SkillTest/graph/Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SkillTest/leetCode/LeetCodeMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SkillTest/leetCode/LeetCodeProblems.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SkillTest/leetCode/ListNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SkillTest/search/BinarySearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SkillTest/search/ISearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SkillTest/search/LinearSearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SkillTest/search/SearchMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SkillTest/sort/BubbleSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SkillTest/sort/ISort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SkillTest/sort/InsertionSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SkillTest/sort/SortMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SkillTest/sort/merge_sort/MergeSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SkillTest/sort/quick_sort/QuickSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetCode/LinkedListCycle141.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetCode/LinkedListCycle141.java" afterDir="false" />
-    </list>
-    <list id="0bf69f3d-0507-433d-9160-30bc24cb39ae" name="ignore" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e3d57cc5-d129-4eb8-907b-d5b1682283d2" name="Default Changelist" comment="" />
+    <list id="0bf69f3d-0507-433d-9160-30bc24cb39ae" name="ignore" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -201,7 +173,7 @@
       <workItem from="1645547015610" duration="12086000" />
       <workItem from="1646991010861" duration="977000" />
       <workItem from="1648083731925" duration="2224000" />
-      <workItem from="1648316289566" duration="2348000" />
+      <workItem from="1648316289566" duration="2630000" />
     </task>
     <task id="LOCAL-00001" summary="code added">
       <created>1549737748967</created>
@@ -448,7 +420,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648317736898</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Linked list palindrome check done">
+      <created>1648605509472</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1648605509472</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -488,7 +467,8 @@
     <MESSAGE value="LeetCode 268 Missing Number - solved" />
     <MESSAGE value="Reversed linked list ok" />
     <MESSAGE value="problem solved" />
-    <option name="LAST_COMMIT_MESSAGE" value="problem solved" />
+    <MESSAGE value="Linked list palindrome check done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Linked list palindrome check done" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="114" key="#Notifications" timestamp="1645343627372">
@@ -511,10 +491,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="483" y="160" key="#xdebugger.evaluate/0.0.1440.900@0.0.1440.900" timestamp="1645725515852" />
-    <state x="433" y="35" key="CommitChangelistDialog2" timestamp="1648317736736">
+    <state x="433" y="35" key="CommitChangelistDialog2" timestamp="1648605509304">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="433" y="35" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1648317736736" />
+    <state x="433" y="35" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1648605509304" />
     <state width="498" height="438" key="DebuggerActiveHint" timestamp="1645637460075">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -611,10 +591,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="100" y="100" width="1240" height="700" key="VCS.FileHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1642178168996" />
-    <state x="320" y="188" key="Vcs.Push.Dialog.v2" timestamp="1648317739676">
+    <state x="320" y="188" key="Vcs.Push.Dialog.v2" timestamp="1648605603185">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="188" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1648317739676" />
+    <state x="320" y="188" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1648605603185" />
     <state x="505" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1640659279399">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -1455,17 +1435,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/PalindromeLinkList.java</url>
-          <line>40</line>
+          <line>45</line>
           <option name="timeStamp" value="353" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/PalindromeLinkList.java</url>
-          <line>31</line>
+          <line>36</line>
           <option name="timeStamp" value="354" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/PalindromeLinkList.java</url>
-          <line>22</line>
+          <line>27</line>
           <option name="timeStamp" value="355" />
         </line-breakpoint>
       </breakpoints>
