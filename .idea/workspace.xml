@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3d57cc5-d129-4eb8-907b-d5b1682283d2" name="Default Changelist" comment="">
+    <list default="true" id="e3d57cc5-d129-4eb8-907b-d5b1682283d2" name="Default Changelist" comment="Unnecessary file removed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetCode/Sqrt69.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetCode/Sqrt69.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sort/merge_sort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/merge_sort/MergeSort.java" afterDir="false" />
     </list>
     <list id="0bf69f3d-0507-433d-9160-30bc24cb39ae" name="ignore" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +60,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -180,7 +184,7 @@
       <workItem from="1646991010861" duration="977000" />
       <workItem from="1648083731925" duration="2224000" />
       <workItem from="1648316289566" duration="2630000" />
-      <workItem from="1648626272482" duration="317000" />
+      <workItem from="1648626272482" duration="2638000" />
     </task>
     <task id="LOCAL-00001" summary="code added">
       <created>1549737748967</created>
@@ -434,7 +438,21 @@
       <option name="project" value="LOCAL" />
       <updated>1648605509472</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Sqrt code improved">
+      <created>1648626749132</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1648626749132</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Unnecessary file removed">
+      <created>1648626919908</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1648626919908</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -473,7 +491,9 @@
     <MESSAGE value="Reversed linked list ok" />
     <MESSAGE value="problem solved" />
     <MESSAGE value="Linked list palindrome check done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Linked list palindrome check done" />
+    <MESSAGE value="Sqrt code improved" />
+    <MESSAGE value="Unnecessary file removed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Unnecessary file removed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -595,17 +615,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/Sqrt69.java</url>
-          <line>14</line>
+          <line>15</line>
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/Sqrt69.java</url>
-          <line>26</line>
+          <line>27</line>
           <option name="timeStamp" value="65" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetCode/Sqrt69.java</url>
-          <line>38</line>
+          <line>39</line>
           <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
