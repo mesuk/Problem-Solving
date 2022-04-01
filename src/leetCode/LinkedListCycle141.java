@@ -33,16 +33,16 @@ public class LinkedListCycle141 {
         }
 
         ListNode slowPtr = head;
-        ListNode fastPtr = head.next;
+        ListNode fastPtr = head;
 
-        while (fastPtr != slowPtr) {
-            if (fastPtr == null || fastPtr.next == null)
-                return false;
-
+        while (fastPtr != null && fastPtr.next != null) {
             slowPtr = slowPtr.next;
             fastPtr = fastPtr.next.next;
+            if (slowPtr == fastPtr) {
+                return true;
+            }
         }
-        return true;
+        return false;
 
     }
 }

@@ -1,45 +1,41 @@
 package leetCode;
 
-import java.util.HashMap;
-import java.util.Stack;
-
 public class Terminal {
     public static void main(String[] args) {
 
-        int[] nums1 = {1, 2}, nums2 = {3, 4};
-        System.out.println(findMedianSortedArrays(nums1, nums2));
+        ListNode head = new ListNode(1);
+        int[] nodeValues = new int[]{1, 3, 8, 10, 5, 100, 7}; // cycle at 10
+        ListNode tempNode, cycleNode = null;
+        tempNode = head;
+        for (int i = 1; i < nodeValues.length; i++) {
+            tempNode.next = new ListNode(nodeValues[i]);
+            if (i == 3) {
+                cycleNode = tempNode.next;
+            }
+            tempNode = tempNode.next;
+        }
+        tempNode.next = cycleNode;
+
+        System.out.println(hasCycle(head));
     }
 
-    public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        int[] mergedArray = new int[nums1.length + nums2.length];
+    public static boolean hasCycle(ListNode head) {
 
-        int i = 0, j = 0;
-        int mergePosition = 0;
+        if (head == null) {
+            return false;
+        }
 
-        while (i < nums1.length && j < nums2.length) {
-            if (nums1[i] < nums2[j]) {
-                mergedArray[mergePosition++] = nums1[i++];
-            } else {
-                mergedArray[mergePosition++] = nums2[j++];
+        ListNode slowPtr = head;
+        ListNode fastPtr = head;
+
+        while (fastPtr != null && fastPtr.next != null) {
+            slowPtr = slowPtr.next;
+            fastPtr = fastPtr.next.next;
+            if (slowPtr == fastPtr) {
+                return true;
             }
         }
+        return false;
 
-        if (i < nums1.length) {
-            for (int k = i; k < nums1.length; k++) {
-                mergedArray[mergePosition++] = nums1[k];
-            }
-        }
-        if (j < nums2.length) {
-            for (int k = j; k < nums2.length; k++) {
-                mergedArray[mergePosition++] = nums2[k];
-            }
-        }
-
-        int length = mergedArray.length;
-        if (length % 2 != 0) {
-            return mergedArray[length / 2];
-        } else {
-            return (double) (mergedArray[length / 2 - 1] + mergedArray[length / 2]) / 2;
-        }
     }
 }
